@@ -1,9 +1,9 @@
-Set the file name and open blob word type
+// Set the file name and open blob word type
 
-var blob = new Blob([data], { type: 'application/octet-stream' });
-var link = document.createElement('a');
+const blob = new Blob([data], { type: 'application/octet-stream' });
+const link = document.createElement('a');
 link.href = URL.createObjectURL(blob);
-// set the name of the file
-link.download = "createdocument.docx";
-// clicking the anchor element will download the file
+// give name tothe file
+link.download = "customfilename.ext";
+// trigger click to download file
 link.click();
