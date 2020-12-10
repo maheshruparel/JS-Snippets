@@ -1,3 +1,4 @@
+// TypeScript Example
 converBase64toBlob(content, contentType) {
   contentType = contentType || '';
   const sliceSize = 512;
